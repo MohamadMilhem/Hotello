@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="810.0" prefWidth="1315.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.databaseproject.CreateRoomPageController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox prefHeight="810.0" prefWidth="435.0" style="-fx-background-color: #003B95;" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="backButton" mnemonicParsing="false" prefHeight="43.0" prefWidth="173.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 20;" styleClass="shadow" stylesheets="@../../../CSS/style.css" text="Back To Home" textFill="#31a4ef">
+                           <font>
+                              <Font name="Cambria" size="20.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="110.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Hotello" textFill="WHITE">
+                           <font>
+                              <Font name="Cambria Bold" size="40.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="31.0" prefWidth="415.0">
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <VBox alignment="CENTER" prefHeight="160.0" prefWidth="335.0" style="-fx-background-color: #F4F4F4; -fx-background-radius: 30;" styleClass="shadow" stylesheets="@../../../CSS/style.css">
+                     <VBox.margin>
+                        <Insets left="50.0" right="50.0" />
+                     </VBox.margin>
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="35.0" prefWidth="335.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="165.0" text="Create City" textFill="#31a4ef">
+                                 <font>
+                                    <Font name="Cambria Bold" size="26.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="TOP_CENTER" prefHeight="63.0" prefWidth="335.0">
+                           <children>
+                              <Label fx:id="cityDescription" prefHeight="40.0" prefWidth="300.0" text="For creating a new city or destination click on the button below." textAlignment="CENTER" textFill="#31a4ef" wrapText="true">
+                                 <HBox.margin>
+                                    <Insets top="15.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Cambria Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="335.0">
+                           <children>
+                              <Button fx:id="createCityButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="116.0" stylesheets="@../../../CSS/style.css" text="Create new City" textFill="#31a4ef">
+                                 <styleClass>
+                                    <String fx:value="button-style" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                                 <font>
+                                    <Font name="Cambria Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="160.0" prefWidth="335.0" style="-fx-background-color: #F4F4F4; -fx-background-radius: 30;" styleClass="shadow" stylesheets="@../../../CSS/style.css">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="35.0" prefWidth="335.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="165.0" text="Create Hotel" textFill="#31a4ef">
+                                 <font>
+                                    <Font name="Cambria Bold" size="26.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="TOP_CENTER" prefHeight="58.0" prefWidth="335.0">
+                           <children>
+                              <Label fx:id="cityDescription1" prefHeight="57.0" prefWidth="300.0" text="To create a new Hotel click on the button below." textAlignment="CENTER" textFill="#31a4ef" wrapText="true">
+                                 <HBox.margin>
+                                    <Insets top="15.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Cambria Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="335.0">
+                           <children>
+                              <Button fx:id="createHotelButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="116.0" stylesheets="@../../../CSS/style.css" text="Create new Hotel" textFill="#31a4ef">
+                                 <styleClass>
+                                    <String fx:value="button-style" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                                 <font>
+                                    <Font name="Cambria Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="50.0" right="50.0" top="10.0" />
+                     </VBox.margin>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="160.0" prefWidth="335.0" style="-fx-background-color: #F4F4F4; -fx-background-radius: 30;" styleClass="shadow" stylesheets="@../../../CSS/style.css">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="35.0" prefWidth="335.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="165.0" text="Create Room" textFill="#31a4ef">
+                                 <font>
+                                    <Font name="Cambria Bold" size="26.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="TOP_CENTER" prefHeight="58.0" prefWidth="335.0">
+                           <children>
+                              <Label fx:id="cityDescription11" prefHeight="40.0" prefWidth="300.0" text="To create a new Room and add it to an existing click on the button below." textAlignment="CENTER" textFill="#31a4ef" wrapText="true">
+                                 <HBox.margin>
+                                    <Insets top="15.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Cambria Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="335.0">
+                           <children>
+                              <Button fx:id="createRoomButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="116.0" stylesheets="@../../../CSS/style.css" text="Create new Room" textFill="#31a4ef">
+                                 <styleClass>
+                                    <String fx:value="button-style" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                                 <font>
+                                    <Font name="Cambria Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="50.0" right="50.0" top="10.0" />
+                     </VBox.margin>
+                  </VBox>
+                  <HBox alignment="CENTER" prefHeight="98.0" prefWidth="435.0" />
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="813.0" prefWidth="880.0">
+                     <children>
+                        <VBox prefHeight="810.0" prefWidth="882.0" style="-fx-background-color: #FFFFFF;">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="61.0" prefWidth="860.0" style="-fx-background-color: #D3D3D3; -fx-background-radius: 30;">
+                                 <children>
+                                    <Label text="Create Room Form">
+                                       <font>
+                                          <Font name="Cambria Bold" size="24.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <VBox alignment="CENTER" prefHeight="741.0" prefWidth="880.0" style="-fx-background-color: #ffffff;">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="479.0" prefWidth="580.0" style="-fx-background-color: #31A4EF; -fx-background-radius: 30;" styleClass="shadow" stylesheets="@../../../CSS/style.css">
+                                       <VBox.margin>
+                                          <Insets left="150.0" right="150.0" />
+                                       </VBox.margin>
+                                       <children>
+                                          <HBox alignment="TOP_CENTER" prefHeight="36.0" prefWidth="580.0">
+                                             <children>
+                                                <Label prefHeight="26.0" prefWidth="252.0" text="Room Number" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Cambria Bold" size="21.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="roomNumberTextField" prefHeight="25.0" prefWidth="180.0" />
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="TOP_CENTER" prefHeight="92.0" prefWidth="580.0">
+                                             <children>
+                                                <Label prefHeight="26.0" prefWidth="252.0" text="Room Description" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Cambria Bold" size="21.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextArea fx:id="roomDescriptionTextArea" prefHeight="90.0" prefWidth="180.0" wrapText="true" />
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="TOP_CENTER" prefHeight="36.0" prefWidth="580.0">
+                                             <children>
+                                                <HBox alignment="TOP_CENTER" prefHeight="92.0" prefWidth="580.0">
+                                                   <children>
+                                                      <Label prefHeight="26.0" prefWidth="358.0" text="Choose Room Image" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Cambria Bold" size="21.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Button fx:id="chooseButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="74.0" styleClass="button-style" stylesheets="@../../../CSS/style.css" text="Choose">
+                                                         <font>
+                                                            <Font name="Cambria" size="12.0" />
+                                                         </font>
+                                                      </Button>
+                                                   </children>
+                                                   <HBox.margin>
+                                                      <Insets top="5.0" />
+                                                   </HBox.margin>
+                                                </HBox>
+                                             </children>
+                                          </HBox>
+                                          <HBox fx:id="hotelLatitudeTextField" alignment="TOP_CENTER" prefHeight="36.0" prefWidth="580.0">
+                                             <children>
+                                                <Label prefHeight="26.0" prefWidth="252.0" text="Cost Per Night" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Cambria Bold" size="21.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="costPerNightTextField" prefHeight="25.0" prefWidth="180.0" />
+                                             </children>
+                                          </HBox>
+                                          <HBox fx:id="hotelLatitudeTextField" alignment="TOP_CENTER" prefHeight="36.0" prefWidth="580.0">
+                                             <children>
+                                                <Label prefHeight="26.0" prefWidth="363.0" text="Children Count" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Cambria Bold" size="21.0" />
+                                                   </font>
+                                                </Label>
+                                                <ComboBox fx:id="childrenCountComboBox" prefHeight="25.0" prefWidth="72.0" styleClass="button-style" />
+                                             </children>
+                                          </HBox>
+                                          <HBox fx:id="hotelLatitudeTextField1" alignment="TOP_CENTER" prefHeight="36.0" prefWidth="580.0">
+                                             <children>
+                                                <Label prefHeight="26.0" prefWidth="363.0" text="Adults Count" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Cambria Bold" size="21.0" />
+                                                   </font>
+                                                </Label>
+                                                <ComboBox fx:id="AdultsCountComboBox" prefHeight="25.0" prefWidth="72.0" styleClass="button-style" />
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="TOP_CENTER" prefHeight="36.0" prefWidth="580.0">
+                                             <children>
+                                                <Label prefHeight="26.0" prefWidth="252.0" text="Amenities" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Cambria Bold" size="21.0" />
+                                                   </font>
+                                                </Label>
+                                                <MenuButton fx:id="amenitiesMenu" mnemonicParsing="false" prefHeight="25.0" prefWidth="182.0" styleClass="button-style" text="Amenities">
+                                                   <font>
+                                                      <Font name="Cambria" size="12.0" />
+                                                   </font>
+                                                </MenuButton>
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="TOP_CENTER" prefHeight="36.0" prefWidth="580.0">
+                                             <children>
+                                                <Label prefHeight="26.0" prefWidth="250.0" text="Hotel" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Cambria Bold" size="21.0" />
+                                                   </font>
+                                                </Label>
+                                                <ComboBox fx:id="hotelComboBox" prefHeight="25.0" prefWidth="182.0" styleClass="button-style" />
+                                             </children>
+                                          </HBox>
+                                          <Line endX="100.0" startX="-334.41107177734375" startY="0.7928932309150696" stroke="WHITE" strokeWidth="1.5" />
+                                          <HBox alignment="CENTER_RIGHT" prefHeight="38.0" prefWidth="516.0">
+                                             <children>
+                                                <Button fx:id="createButton" mnemonicParsing="false" prefHeight="28.0" prefWidth="144.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 30;" styleClass="shadow" text="Create" textAlignment="CENTER" textFill="#31a4ef">
+                                                   <HBox.margin>
+                                                      <Insets right="30.0" top="10.0" />
+                                                   </HBox.margin>
+                                                   <font>
+                                                      <Font name="Cambria" size="14.0" />
+                                                   </font>
+                                                </Button>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets right="40.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

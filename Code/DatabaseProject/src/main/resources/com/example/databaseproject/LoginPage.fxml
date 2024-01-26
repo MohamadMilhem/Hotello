@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="810.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.databaseproject.LoginController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="810.0" prefWidth="1315.0" style="-fx-background-color: #003B95;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="748.0" prefWidth="203.0">
+               <HBox.margin>
+                  <Insets right="150.0" />
+               </HBox.margin>
+               <children>
+                  <Label text="Hotello" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Bold" size="60.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="150.0" fitWidth="164.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../img/hotel-512.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" maxHeight="300.0" prefHeight="281.0" prefWidth="400.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 30;" styleClass="shadow" stylesheets="@../../../CSS/style.css">
+               <children>
+                  <Label fx:id="errorLable" textFill="RED">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="118.0" prefWidth="880.0">
+                     <children>
+                        <VBox alignment="CENTER_RIGHT" prefHeight="214.0" prefWidth="114.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="52.0" prefWidth="116.0" text="Username" textFill="#31a4ef">
+                                 <font>
+                                    <Font name="Cambria Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="52.0" prefWidth="116.0" text="Password" textFill="#31a4ef">
+                                 <font>
+                                    <Font name="Cambria Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="170.0" prefWidth="174.0">
+                           <children>
+                              <TextField fx:id="usernameTextfield" alignment="CENTER" promptText="username" style="-fx-background-color: #F4F4F4; -fx-background-radius: 20;">
+                                 <font>
+                                    <Font name="Cambria" size="12.0" />
+                                 </font>
+                              </TextField>
+                              <Pane prefHeight="25.0" prefWidth="174.0" />
+                              <PasswordField fx:id="passwordTextfield" alignment="CENTER" promptText="******" style="-fx-background-color: #F4F4F4; -fx-background-radius: 20;">
+                                 <font>
+                                    <Font name="Cambria" size="12.0" />
+                                 </font>
+                              </PasswordField>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Pane prefHeight="0.0" prefWidth="880.0" />
+                  <Button fx:id="loginButton" alignment="CENTER" mnemonicParsing="false" prefHeight="24.0" prefWidth="80.0" style="-fx-background-color: #F4F4F4; -fx-background-radius: 30;" styleClass="shadow" stylesheets="@../../../CSS/style.css" text="Log in" textFill="#31a4ef">
+                     <font>
+                        <Font name="Cambria" size="12.0" />
+                     </font>
+                  </Button>
+                  <HBox alignment="CENTER" prefHeight="66.0" prefWidth="880.0">
+                     <children>
+                        <VBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="440.0">
+                           <children>
+                              <Label text="You don't have account?" textFill="#31a4ef">
+                                 <font>
+                                    <Font name="Cambria" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="440.0">
+                           <children>
+                              <Button fx:id="signUpButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: #F4F4F4; -fx-background-radius: 30;" styleClass="shadow" stylesheets="@../../../CSS/style.css" text="SignUp" textFill="#31a4ef">
+                                 <VBox.margin>
+                                    <Insets left="50.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="Cambria" size="12.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

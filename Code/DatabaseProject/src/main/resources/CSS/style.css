@@ -1,0 +1,14 @@
+.hotel-search-result{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 30;
+}
+
+.shadow{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+
+
+.button-style {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 30;
+}

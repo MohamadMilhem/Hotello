@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="750.0" style="-fx-background-color: #00373D; -fx-background-radius: 30;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.databaseproject.AdminRoomResultController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="300.0" layoutY="59.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #003B95; -fx-background-radius: 30;" styleClass="shadow" stylesheets="@../../../CSS/style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="42.0" prefWidth="700.0">
+               <children>
+                  <Label prefHeight="35.0" prefWidth="159.0" text="Room No." textFill="WHITE">
+                     <font>
+                        <Font name="Cambria" size="28.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="roomNumberLabel" prefHeight="35.0" prefWidth="159.0" text="#" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria" size="28.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="250.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <ImageView fx:id="roomImage" fitHeight="250.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../img/GrandParkHotel.jpg" />
+                     </image>
+                  </ImageView>
+                  <VBox prefHeight="250.0" prefWidth="298.0">
+                     <children>
+                        <HBox>
+                           <children>
+                              <Label prefHeight="22.0" prefWidth="168.0" text="Adults Count:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="adultsCountLabel" prefHeight="22.0" prefWidth="138.0" text="#" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <VBox.margin>
+                              <Insets bottom="20.0" top="20.0" />
+                           </VBox.margin>
+                           <children>
+                              <Label prefHeight="22.0" prefWidth="130.0" text="Children Count:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="childrenCountLabel" text="#" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="39.0" prefWidth="243.0">
+                           <children>
+                              <Label text="Description:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Pane prefHeight="102.0" prefWidth="243.0">
+                           <children>
+                              <Label fx:id="descriptionLabel" alignment="TOP_CENTER" prefHeight="93.0" prefWidth="243.0" text="dvery longldafdafsdfsdfsdfssssssssssssssssssssssssss" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                                 <font>
+                                    <Font name="Cambria" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="269.0">
+                           <children>
+                              <Label prefHeight="20.0" prefWidth="89.0" text="Cost/Night" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="15.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets right="10.0" />
+                                 </opaqueInsets>
+                              </Label>
+                              <Label fx:id="costLabel" alignment="CENTER" prefHeight="20.0" prefWidth="57.0" text="#" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="15.0" />
+                                 </font>
+                              </Label>
+                              <VBox alignment="CENTER_RIGHT" prefHeight="49.0" prefWidth="105.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="72.0" prefWidth="243.0">
+                           <children>
+                              <Button fx:id="deleteRoomButton" mnemonicParsing="false" text="Delete Room">
+                                 <font>
+                                    <Font name="Cambria" size="12.0" />
+                                 </font>
+                                 <styleClass>
+                                    <String fx:value="button-style" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="editRoomButton" mnemonicParsing="false" text="Edit Room">
+                                 <font>
+                                    <Font name="Cambria" size="12.0" />
+                                 </font>
+                                 <styleClass>
+                                    <String fx:value="button-style" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

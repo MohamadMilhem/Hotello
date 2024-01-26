@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="700.0" style="-fx-background-color: #00373D; -fx-background-radius: 30;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.databaseproject.HotelSearchResultController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="300.0" layoutY="59.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #003B95; -fx-background-radius: 30;" styleClass="shadow" stylesheets="@../../../CSS/style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="42.0" prefWidth="700.0">
+               <children>
+                  <Label fx:id="hotelNameLabel" prefHeight="35.0" prefWidth="559.0" text="Hotel Name" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria" size="28.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="cityNameOnHotelCardLabel" text="City Name" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria" size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fx:id="hotelMainImage" fitHeight="250.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../img/GrandParkHotel.jpg" />
+                     </image>
+                  </ImageView>
+                  <VBox prefHeight="250.0" prefWidth="323.0">
+                     <children>
+                        <Label text="StarRating:" textFill="WHITE">
+                           <font>
+                              <Font name="Cambria" size="18.0" />
+                           </font>
+                        </Label>
+                        <Pane prefHeight="29.0" prefWidth="243.0">
+                           <children>
+                              <Label fx:id="starRatingLabel" layoutX="16.0" layoutY="4.0" text="Label" textFill="WHITE" />
+                           </children>
+                        </Pane>
+                        <Label text="Description:" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Cambria" size="18.0" />
+                           </font>
+                        </Label>
+                        <Pane prefHeight="120.0" prefWidth="243.0">
+                           <children>
+                              <Label fx:id="descriptionLabel" alignment="TOP_CENTER" contentDisplay="TOP" layoutX="14.0" layoutY="12.0" prefHeight="88.0" prefWidth="213.0" text="Label" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+                           </children>
+                        </Pane>
+                        <HBox alignment="CENTER" prefHeight="60.0" prefWidth="243.0">
+                           <children>
+                              <Button fx:id="goToHotelPageButton" mnemonicParsing="false" text="Go To Hotel Page">
+                                 <font>
+                                    <Font name="Cambria" size="12.0" />
+                                 </font>
+                                 <styleClass>
+                                    <String fx:value="button-style" />
+                                    <String fx:value="shadow" />
+                                 </styleClass></Button>
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

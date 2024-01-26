@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="810.0" prefWidth="1315.0" style="-fx-background-color: #00388E;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.databaseproject.SignUpController">
+   <children>
+      <HBox alignment="CENTER">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <children>
+            <VBox alignment="CENTER" prefHeight="748.0" prefWidth="203.0">
+               <children>
+                  <Label text="Hotello" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Bold" size="60.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="150.0" fitWidth="164.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../img/hotel-512.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets right="150.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox alignment="CENTER" style="-fx-background-color: #00388E;">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="355.0" prefWidth="400.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 30;" styleClass="shadow" stylesheets="@../../../CSS/style.css">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="260.0" prefWidth="383.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 30;">
+                           <children>
+                              <VBox alignment="CENTER_RIGHT" prefHeight="299.0" prefWidth="119.0">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="52.0" prefWidth="116.0" text="Username" textFill="#31a4ef">
+                                       <font>
+                                          <Font name="Cambria" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" prefHeight="41.0" prefWidth="116.0" text="Password" textFill="#31a4ef">
+                                       <font>
+                                          <Font name="Cambria" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" prefHeight="52.0" prefWidth="116.0" text="Confirm Password" textFill="#31a4ef">
+                                       <font>
+                                          <Font name="Cambria" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" prefHeight="55.0" prefWidth="114.0" text="Email" textFill="#31a4ef">
+                                       <font>
+                                          <Font name="Cambria" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" prefHeight="46.0" prefWidth="114.0" text="Name" textFill="#31a4ef">
+                                       <font>
+                                          <Font name="Cambria" size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="170.0" prefWidth="174.0">
+                                 <children>
+                                    <TextField fx:id="usernameTextfield" alignment="CENTER" promptText="jonny.smith" style="-fx-background-color: #F4F4F4; -fx-background-radius: 30;" stylesheets="@../../../CSS/style.css" />
+                                    <Pane prefHeight="25.0" prefWidth="174.0" />
+                                    <PasswordField fx:id="passwordTextfield" alignment="CENTER" promptText="******" style="-fx-background-color: #F4F4F4; -fx-background-radius: 30;" stylesheets="@../../../CSS/style.css" />
+                                    <Pane prefHeight="21.0" prefWidth="174.0" />
+                                    <PasswordField fx:id="confirmPasswordTextfield" alignment="CENTER" promptText="******" style="-fx-background-color: #F4F4F4; -fx-background-radius: 30;" stylesheets="@../../../CSS/style.css" />
+                                    <Pane prefHeight="28.0" prefWidth="174.0" />
+                                    <TextField fx:id="emailTextField" alignment="CENTER" promptText="john.smith@example.com" style="-fx-background-color: #F4F4F4; -fx-background-radius: 30;" stylesheets="@../../../CSS/style.css" />
+                                    <Pane prefHeight="28.0" prefWidth="174.0" />
+                                    <TextField fx:id="nameTextField" alignment="CENTER" promptText="John Smith" style="-fx-background-color: #F4F4F4; -fx-background-radius: 30;" stylesheets="@../../../CSS/style.css" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <Label fx:id="errorLable" textFill="RED">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="42.0" prefWidth="1315.0">
+                           <children>
+                              <Button fx:id="signupButton" alignment="TOP_CENTER" mnemonicParsing="false" style="-fx-background-color: #F4F4F4; -fx-background-radius: 30;" styleClass="shadow" stylesheets="@../../../CSS/style.css" text="Signup" textFill="#31a4ef">
+                                 <font>
+                                    <Font name="Cambria" size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

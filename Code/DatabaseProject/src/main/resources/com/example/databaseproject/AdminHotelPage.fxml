@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="810.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.databaseproject.AdminHotelPageController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox prefHeight="810.0" prefWidth="435.0" style="-fx-background-color: #003B95;" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="19.0" prefWidth="435.0">
+                     <children>
+                        <Button fx:id="backButton" mnemonicParsing="false" style="-fx-background-color: #FFFFFF; -fx-background-radius: 20;" text="Back" textFill="#31a4ef">
+                           <font>
+                              <Font name="Cambria" size="21.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="75.0" prefWidth="435.0">
+                     <children>
+                        <Label text="Hotello" textFill="WHITE">
+                           <font>
+                              <Font name="Cambria Bold" size="40.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <VBox fx:id="chosenHotelCard" alignment="TOP_CENTER" prefHeight="324.0" prefWidth="335.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 30;" styleClass="shadow" stylesheets="@../../../CSS/style.css">
+                     <VBox.margin>
+                        <Insets left="50.0" right="50.0" />
+                     </VBox.margin>
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="335.0">
+                           <children>
+                              <Label fx:id="hotelNameLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="315.0" text="Hotel Name" textAlignment="CENTER" textFill="#31a4ef" wrapText="true">
+                                 <font>
+                                    <Font name="Cambria Bold" size="24.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <StackPane prefHeight="170.0" prefWidth="300.0">
+                           <children>
+                              <ImageView fx:id="hotelMainImage" fitHeight="170.0" fitWidth="285.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../img/Jerusalem.JPG" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <HBox alignment="TOP_CENTER" prefHeight="50.0" prefWidth="335.0">
+                                 <children>
+                                    <Label fx:id="hotelDescription" alignment="CENTER" prefHeight="54.0" prefWidth="333.0" text="Historical city with religious significance." textFill="#31a4ef" wrapText="true">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font name="Cambria Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="45.0" prefWidth="335.0">
+                                 <children>
+                                    <VBox alignment="TOP_RIGHT" prefHeight="45.0" prefWidth="165.0">
+                                       <children>
+                                          <Label prefHeight="22.0" prefWidth="95.0" text="Star Rating:" textFill="WHITE">
+                                             <font>
+                                                <Font name="Cambria" size="18.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="45.0" prefWidth="169.0">
+                                       <children>
+                                          <Label fx:id="hotelStarRating" prefHeight="22.0" prefWidth="37.0" text="#" textFill="WHITE">
+                                             <font>
+                                                <Font name="Cambria" size="18.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets left="15.0" />
+                                             </padding>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </VBox>
+                  <Pane prefHeight="27.0" prefWidth="435.0" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+         </left>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="54.0" prefWidth="784.0" style="-fx-background-color: #D3D3D3; -fx-background-radius: 30;">
+                     <children>
+                        <Label text="Rooms">
+                           <font>
+                              <Font name="Cambria" size="36.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="60.0" right="60.0" top="15.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="700.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <ScrollPane fx:id="scroll" hmin="750.0" prefHeight="750.0" prefWidth="880.0" HBox.hgrow="ALWAYS">
+                           <content>
+                              <GridPane fx:id="grid" alignment="TOP_CENTER" prefHeight="738.0" prefWidth="878.0">
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                                 </rowConstraints>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </GridPane>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
